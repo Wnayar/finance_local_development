@@ -374,3 +374,8 @@ def sell():
     conn.commit()
     # return redirect to homepage
     return redirect("/")
+
+# # use the followign below if want to run app in command lien by typing: python3 app.py , if runnign using cmd line: flask run dont include the below
+# # for exampel pythonanywhere hostign website requires this to run 
+# if __name__ == "__main__":
+#     app.run(debug=True)
