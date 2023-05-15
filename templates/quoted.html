@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <!-- the usd, just need to use pipeline, was defined in app.py as a jinja filter which coverts to standadises 2.dp with $ sign -->
+    A share of {{name}} ({{symbol}}) costs {{price | usd}}.
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <div class="container py-5 text-center">
+        <table class="table">
+            <thead>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </thead>
+            {% for transaction in historydict %}
+                <tr>
+                    <td class="text-start">{{transaction.symbol}}</td>
+                    <td class="text-end">{{transaction.qtybought}}</td>
+                    <td class="text-end">{{transaction.pricebought}}</td>
+                    <td class="text-end">{{transaction.dateoftransaction}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
