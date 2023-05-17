@@ -1,7 +1,7 @@
 # finance_local_development
-CS50 Week 9 Finance Developed Locally with no training wheels
+__CS50 Week 9 Finance Developed Locally with no training wheels__
 
-1. Developed in a local Vscode, with ubuntu to host the windows subsytem for linux (WSL) as the terminal
+1. Developed in a local Vscode, with ubuntu to host the windows subsytem for linux (WSL) as the terminal 
 2. Updated apt-get and downloaded relevant packages
 3. Downloaded usping pip as python packet manager several packages (including cs50 check50 and sumbit50 needed for submission final prject)
 4. Removed CS50 sql dependecnies and imported sqlite instead and adjusted code to adhere to sqlite format 
